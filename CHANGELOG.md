@@ -1,10 +1,10 @@
 # Changelog
 
-Todas las notas importantes sobre los cambios en este proyecto se documentarán en este archivo.
+All notable changes to this project will be documented in this file.
 
 ## [0.1.0] - 2024-07-02
-### Añadido
-- Estructura inicial del proyecto con carpetas para datos, notebooks, src, tests, examples y docker.
-- Archivos principales como `README.md`, `.gitignore`, `setup.py`, `requirements.txt`, y `CHANGELOG.md`.
-- Primeros módulos para la API y Streamlit.
+### Added
+- Initial project structure with folders for data, notebooks, src, tests, examples, and docker.
+- Main files such as `README.md`, `.gitignore`, `setup.py`, `requirements.txt`, and `CHANGELOG.md`.
+- Initial modules for the API and Streamlit.
 

@@ -1,207 +1,207 @@
-# Nombre del Proyecto
+# Project Name
 
-Este repositorio contiene un portafolio de proyectos de data science que demuestra habilidades en análisis de datos, modelado predictivo, visualización, desarrollo de APIs con FastAPI y creación de aplicaciones interactivas con Streamlit.
+This repository contains a portfolio of data science projects that demonstrate skills in data analysis, predictive modeling, visualization, API development with FastAPI, and creating interactive applications with Streamlit.
 
-## Tabla de Contenidos
+## Table of Contents
 
-1. [Introducción](#introducción)
-2. [Descripción del Proyecto](#descripción-del-proyecto)
-3. [Estructura del Proyecto](#estructura-del-proyecto)
-4. [Requisitos](#requisitos)
-5. [Instalación](#instalación)
-6. [Uso](#uso)
-7. [Ejemplos](#ejemplos)
+1. [Introduction](#introduction)
+2. [Project Description](#project-description)
+3. [Project Structure](#project-structure)
+4. [Requirements](#requirements)
+5. [Installation](#installation)
+6. [Usage](#usage)
+7. [Examples](#examples)
 8. [Changelogs](#changelogs)
 9. [API](#api)
-10. [Aplicación Streamlit](#aplicación-streamlit)
-11. [Contribuciones](#contribuciones)
-12. [Licencia](#licencia)
-13. [Contacto](#contacto)
+10. [Streamlit Application](#streamlit-application)
+11. [Contributions](#contributions)
+12. [License](#license)
+13. [Contact](#contact)
 
-## Introducción
+## Introduction
 
-Describe brevemente el propósito del proyecto y su importancia.
+Briefly describe the purpose of the project and its importance.
 
-## Descripción del Proyecto
+## Project Description
 
-Explica en detalle el proyecto, incluyendo:
+Explain the project in detail, including:
 
-- Objetivos
-- Metodología utilizada
-- Resultados esperados o alcanzados
-- Tecnologías y herramientas utilizadas
+- Objectives
+- Methodology used
+- Expected or achieved results
+- Technologies and tools used
 
-## Estructura del Proyecto
+## Project Structure
 
-Proporciona una visión general de la estructura del proyecto:
+Provide an overview of the project structure:
 
 ```
 my_data_science_project/
 │
 ├── data/
-│   ├── raw/              # Datos originales sin procesar
-│   ├── processed/        # Datos procesados para análisis y modelado
-│   └── external/         # Datos externos utilizados en el proyecto
+│   ├── raw/              # Original unprocessed data
+│   ├── processed/        # Processed data for analysis and modeling
+│   └── external/         # External data used in the project
 │
 ├── notebooks/
-│   ├── exploratory/      # Notebooks para análisis exploratorio
-│   ├── modeling/         # Notebooks para la construcción y evaluación de modelos
-│   └── reports/          # Notebooks con resultados finales y reportes
+│   ├── exploratory/      # Notebooks for exploratory analysis
+│   ├── modeling/         # Notebooks for model building and evaluation
+│   └── reports/          # Notebooks with final results and reports
 │
 ├── src/
-│   ├── __init__.py       # Hace que src sea un paquete Python
-│   ├── data/             # Módulos para la carga y transformación de datos
+│   ├── __init__.py       # Makes src a Python package
+│   ├── data/             # Modules for data loading and transformation
 │   │   └── __init__.py
-│   ├── features/         # Módulos para la ingeniería de características
+│   ├── features/         # Modules for feature engineering
 │   │   └── __init__.py
-│   ├── models/           # Módulos para la construcción, entrenamiento y evaluación de modelos
+│   ├── models/           # Modules for model building, training, and evaluation
 │   │   └── __init__.py
-│   ├── visualization/    # Módulos para la generación de visualizaciones
+│   ├── visualization/    # Modules for generating visualizations
 │   │   └── __init__.py
-│   ├── api/              # Módulos para la API
+│   ├── api/              # Modules for the API
 │   │   ├── __init__.py
-│   │   ├── app.py        # Definición de la API con FastAPI o Flask
-│   │   └── utils.py      # Utilidades para la API
-│   └── streamlit_app/    # Aplicación Streamlit
+│   │   ├── app.py        # API definition with FastAPI or Flask
+│   │   └── utils.py      # Utilities for the API
+│   └── streamlit_app/    # Streamlit application
 │       ├── __init__.py
-│       └── app.py        # Definición de la aplicación Streamlit
+│       └── app.py        # Streamlit application definition
 │
 ├── tests/
-│   ├── __init__.py       # Hace que tests sea un paquete Python
-│   ├── test_data/        # Pruebas para la carga y transformación de datos
+│   ├── __init__.py       # Makes tests a Python package
+│   ├── test_data/        # Tests for data loading and transformation
 │   │   └── __init__.py
-│   ├── test_features/    # Pruebas para la ingeniería de características
+│   ├── test_features/    # Tests for feature engineering
 │   │   └── __init__.py
-│   ├── test_models/      # Pruebas para la construcción, entrenamiento y evaluación de modelos
+│   ├── test_models/      # Tests for model building, training, and evaluation
 │   │   └── __init__.py
-│   ├── test_visualization/ # Pruebas para la generación de visualizaciones
+│   ├── test_visualization/ # Tests for generating visualizations
 │   │   └── __init__.py
-│   └── test_api/         # Pruebas para la API
+│   └── test_api/         # Tests for the API
 │       └── __init__.py
 │
 ├── examples/
-│   └── example_notebooks/ # Ejemplos de notebooks utilizando la librería desarrollada
+│   └── example_notebooks/ # Example notebooks using the developed library
 │
 ├── docker/
-│   ├── Dockerfile        # Dockerfile para construir la imagen del proyecto
-│   └── docker-compose.yml # Configuración de Docker Compose
+│   ├── Dockerfile        # Dockerfile for building the project image
+│   └── docker-compose.yml # Docker Compose configuration
 │
-├── .gitignore            # Archivos y carpetas a ignorar en el control de versiones
-├── README.md             # Descripción general del proyecto
-├── requirements.txt      # Lista de dependencias del proyecto
-└── setup.py              # Script para instalar el paquete src
+├── .gitignore            # Files and folders to ignore in version control
+├── README.md             # Project overview
+├── requirements.txt      # List of project dependencies
+└── setup.py              # Script for installing the src package
 ```
 
-## Requisitos
+## Requirements
 
-Lista las dependencias y requisitos necesarios para ejecutar el proyecto:
+List the dependencies and requirements needed to run the project:
 
 - Python 3.x
-- Bibliotecas especificadas en 
+- Libraries specified in 
 
-## Instalación
+## Installation
 
-Instrucciones paso a paso sobre cómo configurar el entorno de desarrollo:
+Step-by-step instructions on how to set up the development environment:
 
-1. Clonar el repositorio:
+1. Clone the repository:
    ```bash
-   git clone https://github.com/tu_usuario/tu_proyecto.git
-   cd tu_proyecto
+   git clone https://github.com/your_username/your_project.git
+   cd your_project
    ```
 
-2. Crear un entorno virtual e instalar dependencias:
+2. Create a virtual environment and install dependencies:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # En Windows usa 
+   source venv/bin/activate  # On Windows use 
    pip install -r requirements.txt
    ```
 
-## Uso
+## Usage
 
-Ejemplos de cómo ejecutar scripts o notebooks específicos:
+Examples of how to run specific scripts or notebooks:
 
-1. Ejecutar un notebook:
+1. Run a notebook:
    ```bash
-   jupyter notebook notebooks/exploratory/tu_notebook.ipynb
+   jupyter notebook notebooks/exploratory/your_notebook.ipynb
    ```
 
-2. Ejecutar la API:
+2. Run the API:
    ```bash
    uvicorn src.api.app:app --reload
    ```
 
-3. Ejecutar la aplicación Streamlit:
+3. Run the Streamlit application:
    ```bash
    streamlit run src/streamlit_app/app.py
    ```
 
-## Ejemplos
+## Examples
 
-Proporciona enlaces o instrucciones para ejecutar notebooks de ejemplo:
+Provide links or instructions to run example notebooks:
 
-- [Notebook de análisis exploratorio](notebooks/exploratory/example_notebook.ipynb)
-- [Notebook de modelado](notebooks/modeling/example_notebook.ipynb)
+- [Exploratory Analysis Notebook](notebooks/exploratory/example_notebook.ipynb)
+- [Modeling Notebook](notebooks/modeling/example_notebook.ipynb)
 
 ## Changelogs
 
-### Cómo gestionar versiones
+### How to Manage Versions
 
-- **Versiones mayores (Major):** Se incrementan cuando se hacen cambios significativos que pueden romper la compatibilidad con versiones anteriores (e.g., 1.0.0).
-- **Versiones menores (Minor):** Se incrementan cuando se añaden funcionalidades nuevas que son compatibles con las versiones anteriores (e.g., 1.1.0).
-- **Parches (Patch):** Se incrementan cuando se corrigen errores o se hacen pequeñas mejoras que no afectan la compatibilidad (e.g., 1.1.1).
+- **Major versions:** Increment when making significant changes that might break backward compatibility (e.g., 1.0.0).
+- **Minor versions:** Increment when adding new features that are backward compatible (e.g., 1.1.0).
+- **Patch versions:** Increment when making bug fixes or small improvements that do not affect compatibility (e.g., 1.1.1).
 
-Para lanzar una nueva versión:
+To release a new version:
 
-1. Actualiza el número de versión en `setup.py`.
-2. Documenta los cambios en `CHANGELOG.md`.
-3. Realiza un commit y etiqueta la nueva versión:
+1. Update the version number in .
+2. Document the changes in .
+3. Commit and tag the new version:
    ```bash
-   git commit -am "Lanzamiento de la versión X.Y.Z"
-   git tag -a X.Y.Z -m "Lanzamiento de la versión X.Y.Z"
+   git commit -am "Release version X.Y.Z"
+   git tag -a X.Y.Z -m "Release version X.Y.Z"
    git push origin --tags
    ```
 
 ## API
 
-Descripción de los endpoints disponibles en la API y ejemplos de uso:
+Description of available API endpoints and usage examples:
 
 - **POST /predict**
-  - Entrada: JSON con las características del modelo
-  - Salida: JSON con la predicción
-  - Ejemplo de uso:
+  - Input: JSON with model features
+  - Output: JSON with the prediction
+  - Example usage:
     ```bash
     curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json" -d '{"feature1": 1.0, "feature2": 2.0, "feature3": 3.0}'
     ```
 
-## Aplicación Streamlit
+## Streamlit Application
 
-Instrucciones para usar la aplicación Streamlit:
+Instructions on how to use the Streamlit application:
 
-- Ejecuta la aplicación:
+- Run the application:
   ```bash
   streamlit run src/streamlit_app/app.py
   ```
 
-## Contribuciones
+## Contributions
 
-Instrucciones sobre cómo otros pueden contribuir a tu proyecto:
+Instructions on how others can contribute to your project:
 
-1. Realiza un fork del repositorio.
-2. Crea una nueva rama ().
-3. Realiza tus cambios y haz un commit ().
-4. Sube tus cambios a tu repositorio ().
-5. Abre un Pull Request.
+1. Fork the repository.
+2. Create a new branch ().
+3. Make your changes and commit them ().
+4. Push your changes to your repository ().
+5. Open a Pull Request.
 
-## Licencia
+## License
 
-Indica la licencia bajo la cual se distribuye el proyecto, por ejemplo:
+Indicate the license under which the project is distributed, for example:
 
-Este proyecto está bajo la licencia MIT. Mira el archivo [LICENSE](LICENSE) para más detalles.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## Contacto
+## Contact
 
-Proporciona información de contacto o enlaces a tus redes sociales:
+Provide contact information or links to your social media:
 
-- Autor: [Tu Nombre](https://tu-enlace)
-- LinkedIn: [Tu LinkedIn](https://linkedin.com/in/miguelangelrodenas)
-- Correo: tu_correo@ejemplo.com
+- Author: [Your Name](https://your-link)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
+- Email: your_email@example.com
