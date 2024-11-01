@@ -1,20 +1,28 @@
 from setuptools import setup, find_packages
 
+DESCRIPTION = 'My first Python package'
+LONG_DESCRIPTION = 'My first Python package description'
+
+install_requires = [
+    "numpy>=1.19",  
+    "pandas>1.0.3",
+    'matplotlib',
+    'seaborn',
+    'scikit-learn',
+    'fastapi',
+    'uvicorn',
+    'joblib',
+    'streamlit',
+]
+
 setup(
-    name='my_data_science_project',
+    name='my_data_science_lib', 
     version='0.1',
-    packages=find_packages(where='src'),
-    package_dir={'': 'src'},
-    install_requires=[
-        'numpy',
-        'pandas',
-        'matplotlib',
-        'seaborn',
-        'scikit-learn',
-        'fastapi',
-        'uvicorn',
-        'joblib',
-        'streamlit',
-    ],
-    test_suite='tests',
+    description=DESCRIPTION,
+    long_description=LONG_DESCRIPTION,
+    packages=find_packages(where='src'),  
+    package_dir={'': 'src'},  
+    python_requires=">=3.9",
+    install_requires=install_requires
+    # test_suite='tests',
 )
