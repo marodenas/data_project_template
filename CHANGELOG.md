@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.1] - 2024-11-14
+### Added
+- .gitignore file added
+
+
 ## [0.2.0] - 2024-11-01
 ### Added
 - Changes on package path
